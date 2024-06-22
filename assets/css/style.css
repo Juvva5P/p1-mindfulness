@@ -26,7 +26,14 @@ body {
 /* Header */
 
 header {
-    background-color: rgba(23, 204, 204, 0.315);
+    background-color: rgba(69, 182, 182, 0.473);
+    padding-left: 10px;
+    padding-right: 10px;
+    word-spacing: 2px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 15px 40px #fdfdfde5
 }
 
 h1 {
@@ -42,14 +49,13 @@ i {
 nav {
     padding-left: 10px;
     padding-right: 10px;
-    word-spacing: 2px;
 }
 
 
 /* Main content */
 
 main {
-    background-color: rgba(255, 165, 82, 0.671);
+    background-color: rgba(188, 238, 231, 0.747);
 
     /*So that main element takes up remaining space*/
     flex: 1 0 auto;
