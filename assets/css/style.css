@@ -39,6 +39,13 @@ i {
     padding-left: 10px;
 }
 
+nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    word-spacing: 2px;
+}
+
+
 /* Main content */
 
 main {
