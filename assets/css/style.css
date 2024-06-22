@@ -33,7 +33,12 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 15px 40px #fdfdfde5
+    box-shadow: 0 3px 1px #f9fcfc;
+}
+
+header a {
+    text-decoration: none;
+    color: #f9fcfc;
 }
 
 h1 {
@@ -49,6 +54,22 @@ i {
 nav {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#navigation {
+    font-size: 125%;
+    word-spacing: 6px;
+    list-style-type: none;
+    margin-top: 6px;
+}
+
+#navigation > li {
+    margin-bottom: 3.5px;
+}
+
+.active {
+    border-bottom: 3px solid #f9fcfc;
 }
 
 
@@ -59,11 +80,11 @@ main {
 
     /*So that main element takes up remaining space*/
     flex: 1 0 auto;
-
 }
 
 /* Footer */
 
 footer {
     background-color: rgba(22, 112, 112, 0.685);
+    box-shadow: 0 -3px 1px #f9fcfc;
 }
