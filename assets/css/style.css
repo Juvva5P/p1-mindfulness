@@ -1,0 +1,28 @@
+/*Override default styles with asterisk wildcard selector*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Header */
+
+header {
+    background-color: rgba(23, 204, 204, 0.315);
+}
+
+/* Main content */
+
+main {
+    /*background-color: rgba(218, 199, 206, 0.548);*/
+    background-color: rgba(231, 141, 30, 0.534);
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(22, 112, 112, 0.212);
+}
