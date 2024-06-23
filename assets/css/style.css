@@ -27,13 +27,16 @@ body {
 
 header {
     background-color: rgba(69, 182, 182, 0.473);
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 10px;
     word-spacing: 2px;
     position: fixed;
     z-index: 99;
     width: 100%;
     box-shadow: 0 3px 1px #f9fcfc;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -49,12 +52,32 @@ h1 {
 i {
     padding-right: 10px;
     padding-left: 10px;
+    color: #f9fcfc;
 }
 
 nav {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-right: 0 1rem;
+    left: 0;
+    position: absolute;
+    background-color: rgba(69, 182, 182, 0.473);
+    box-shadow: 0 3px 1px #f9fcfc;
+    width: 100%;
+    display: none;
+    top: 100%;
+}
+
+/*Hamburger toggle*/
+
+#hamburger:checked~nav {
+    display: block;
+}
+
+#hamburger {
+    display: none;
+}
+
+.hamburger-label {
+    font-size: 200%;
 }
 
 #navigation {
