@@ -37,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    
 }
 
 header a {
@@ -47,6 +48,9 @@ header a {
 h1 {
     font-family: 'poppins', sans-serif;
     word-spacing: 2px;
+    font-size: 150%;
+    
+
 }
 
 i {
@@ -59,7 +63,6 @@ nav {
     padding-right: 0 1rem;
     left: 0;
     position: absolute;
-    background-color: rgba(69, 182, 182, 0.473);
     box-shadow: 0 3px 1px #f9fcfc;
     width: 100%;
     display: none;
@@ -70,6 +73,7 @@ nav {
 
 #hamburger:checked~nav {
     display: block;
+    background-color: rgba(69, 182, 182, 0.473);
 }
 
 #hamburger {
@@ -77,11 +81,11 @@ nav {
 }
 
 .hamburger-label {
-    font-size: 200%;
+    font-size: 140%;
 }
 
 #navigation {
-    font-size: 125%;
+    font-size: 110%;
     word-spacing: 6px;
     list-style-type: none;
     margin-top: 6px;
@@ -100,6 +104,7 @@ nav {
 
 main {
     background-color: rgba(188, 238, 231, 0.747);
+    margin-top: 35px;
 
     /*So that main element takes up remaining space*/
     flex: 1 0 auto;
@@ -110,4 +115,46 @@ main {
 footer {
     background-color: rgba(22, 112, 112, 0.685);
     box-shadow: 0 -3px 1px #f9fcfc;
+}
+
+/*Media queries for tablets and larger screens (768px +)  */
+@media screen and (min-width: 768px) {
+ 
+    nav {
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        display: block;
+        padding-right: 1rem;
+    }
+
+
+    #navigation {
+        display: flex;   
+        font-size: 150%;
+        letter-spacing: 3px;
+    
+    }
+
+    #navigation > li {
+        padding-left: 25px;
+        padding-right: 0px;
+    
+    }
+
+    .hamburger-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 250%;
+        line-height: 60px;
+        margin: 0 0.5rem;
+    }
+
+    /*main styles*/
+
+    main {
+        margin-top: 60px;
+    }
 }
