@@ -48,7 +48,7 @@ header a {
 h1 {
     font-family: 'poppins', sans-serif;
     word-spacing: 2px;
-    font-size: 140%;
+    font-size: 200%;
     
 
 }
@@ -82,12 +82,12 @@ nav {
     display: none;
 }
 
-label > i:hover {
+header i:hover {
     color: rgb(200, 107, 210);
 }
 
 .hamburger-label {
-    font-size: 140%;
+    font-size: 175%;
 }
 
 #navigation {
@@ -111,7 +111,7 @@ label > i:hover {
 
 main {
     background-color: rgba(188, 238, 231, 0.747);
-    margin-top: 35px;
+    margin-top: 50px;
 
     /*So that main element takes up remaining space*/
     flex: 1 0 auto;
@@ -175,7 +175,7 @@ footer {
     }
 
     #logo {
-        font-size: 250%;
+        font-size: 225%;
         line-height: 60px;
         margin: 0 0.5rem;
     }
@@ -192,5 +192,11 @@ footer {
 
     #navigation a:hover {
         border-bottom: 3px solid #f9fcfc;
+    }
+
+    #logo {
+        font-size: 270%;
+        line-height: 60px;
+        margin: 0 0.5rem;
     }
 }
