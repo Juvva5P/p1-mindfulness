@@ -48,7 +48,7 @@ header a {
 h1 {
     font-family: 'poppins', sans-serif;
     word-spacing: 2px;
-    font-size: 150%;
+    font-size: 140%;
     
 
 }
@@ -58,6 +58,7 @@ i {
     padding-left: 10px;
     color: #f9fcfc;
 }
+
 
 nav {
     padding-right: 0 1rem;
@@ -79,6 +80,10 @@ nav {
 
 #hamburger {
     display: none;
+}
+
+label > i:hover {
+    color: rgb(200, 107, 210);
 }
 
 .hamburger-label {
@@ -117,8 +122,28 @@ main {
 
 footer {
     background-color: rgba(22, 112, 112, 0.685);
-    box-shadow: 0 -3px 1px #f9fcfc;
+    box-shadow: 0 -2px 1px #f9fcfc;
 }
+
+#social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    /*flex-direction: row;*/
+    list-style-type: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#social-icons i {
+    padding: 5%;
+    font-size: 150%;
+}
+
+#social-icons i:hover {
+    color: rgb(200, 107, 210);
+}
+
+
 
 /*Media queries for tablets and larger screens (768px +)  */
 @media screen and (min-width: 768px) {
